@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Vipin Tanwar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Vipin<span class="accent">Tanwar</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link cta">Contact</a>
+      </nav>
+
+      <button id="nav-toggle" aria-label="Toggle navigation" class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Vipin Tanwar</h1>
+          <h2 class="hero-subtitle">I'm a <span class="animated-role">Full Stack Developer</span></h2>
+          <p class="lead">
+            I build responsive, accessible web apps with modern HTML, CSS, and JavaScript.
+            I focus on clear interfaces and polished interactions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn">See Projects</a>
+            <a href="#contact" class="btn btn-ghost">Work with me</a>
+          </div>
+        </div>
+
+          <div class="avatar">
+            <img src="vipin.jpg" alt="Vipin Photo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section about">
+      <div class="container grid-two">
+        <div>
+          <h3>About me</h3>
+          <p>
+            I'm a passionate web developer who loves to create clean, responsive, and user-friendly digital experiences.
+            My toolset includes HTML, CSS, and JavaScript.
+          </p>
+          <ul>
+            <li>Problem solving & clean code</li>
+            <li>Responsive & accessible design</li>
+            <li>Fast prototyping & iteration</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Experience</h3>
+          <p>
+            I worked on severl projets like in python gradebook analyzer by pyhton and portfolio website using HTML 
+            and CSS in basic  and mannual way.
+          </p>
+          <a class="btn" href="#projects">View projects</a>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h3>Skills</h3>
+        <p class="muted">Technologies and tools I work with.</p>
+
+        <div class="skills-grid">
+          <div class="skill-card">HTML <span class="skill-level">Advanced</span></div>
+          <div class="skill-card">CSS <span class="skill-level">Moderate</span></div>
+          <div class="skill-card">JavaScript <span class="skill-level">Intermediate</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h3>Projects</h3>
+        <p class="muted">Here are some of the projects I have worked on.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media">🐍</div>
+            <h4>Python Calculator</h4>
+            <p>A simple and clean calculator application built using Python.</p>
+            <div class="project-tags">
+              <span>Python</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">📘</div>
+            <h4>Gradebook Analyzer</h4>
+            <p>A Python-based tool that analyzes student grades and generates insights.</p>
+            <div class="project-tags">
+              <span>Python</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">🔥</div>
+            <h4>Calorie Tracker</h4>
+            <p>An app built in Python to track daily calorie intake efficiently.</p>
+            <div class="project-tags">
+              <span>Python</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">💻</div>
+            <h4>HTML & CSS Portfolio</h4>
+            <p>A fully responsive portfolio built earlier using just HTML and CSS.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p class="muted">Have a question or want to work together? Send a message.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label>
+              <span class="label">Name</span>
+              <input name="name" type="text" required placeholder="Your name" />
+            </label>
+
+            <label>
+              <span class="label">Email</span>
+              <input name="email" type="email" required placeholder="you@example.com" />
+            </label>
+          </div>
+
+          <label>
+            <span class="label">Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send message</button>
+            <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Vipin Tanwar. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/tanwarvipin967-commits" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/vipin-tanwar-284b1837b" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
